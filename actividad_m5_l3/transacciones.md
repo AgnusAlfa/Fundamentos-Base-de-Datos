@@ -11,3 +11,11 @@ Consistencia: Asegura que cualquier transacción llevará a la base de datos de 
 Aislamiento: Garantiza que las transacciones que se ejecutan al mismo tiempo (concurrentemente) no interfieran entre sí. Cada transacción se procesa como si fuera la única ejecutándose en el sistema.  
 
 Durabilidad: Asegura que, una vez que una transacción ha sido confirmada con éxito, los cambios realizados son permanentes y sobrevivirán a cualquier fallo del sistema (como un corte de energía). 
+
+3. Diferencia notada entre ROLLBACK y COMMIT
+
+Tras realizar los ejercicios prácticos en SQL, la diferencia principal que noté es que actúan como funciones opuestas al finalizar una transacción:
+
+ROLLBACK funciona como un botón de cancelación (deshacer). Al usarlo después de intentar actualizar el total del pedido (UPDATE), la base de datos descartó los cambios y mantuvo la información en su estado original. Es decir, aborta la transacción y protege los datos de modificaciones indeseadas o incompletas.
+
+COMMIT funciona como un botón de guardado definitivo (confirmar). Al usarlo después de la instrucción de eliminar un pedido (DELETE), la base de datos confirmó la acción y borró el registro de manera permanente. Es decir, sella la transacción y aplica los cambios para siempre en el sistema.
