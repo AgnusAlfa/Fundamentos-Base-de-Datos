@@ -100,3 +100,4 @@ WHERE id IN (
     FROM pedidos 
     WHERE total > 100000
 );
+
