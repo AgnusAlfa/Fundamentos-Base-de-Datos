@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Tarea_M5",
+            "database": "./actividad_m5_12/base_datos.sqlite"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
